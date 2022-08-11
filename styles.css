@@ -1,0 +1,208 @@
+body {
+  background-color: #b35900;
+  margin: 0;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+p {
+  text-align: left;
+  font-size: 20px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 35px;
+  color: #ff9933;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-style: double;
+          text-decoration-style: double;
+  text-decoration-thickness: 3px;
+}
+
+h2 {
+  text-align: left;
+  font-size: 30px;
+  margin: 10px;
+  font-style: italic;
+}
+
+section {
+  margin-top: 30px;
+}
+
+figure {
+  margin: 20px 5px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+figcaption {
+  color: #4d2600;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+}
+
+.main {
+  background-color: #ff9933;
+  border: solid 5px #4d2600;
+  border-radius: 15px;
+  margin: 15px;
+  padding: 20px;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__tweejaar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 1fr auto auto auto;
+  grid-template-areas: "O O O" "P P P" "Q Q Q" ". R .";
+}
+.main__tweejaar--header {
+  grid-area: O;
+}
+.main__tweejaar--text {
+  grid-area: P;
+}
+.main__tweejaar--tv {
+  grid-area: Q;
+}
+.main__tweejaar--video {
+  grid-area: R;
+  margin-top: 25px;
+}
+
+footer {
+  border: solid 2px #4d2600;
+  border-radius: 10px;
+  background-color: #ff9933;
+  margin: 15px 15px 40px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #b35900;
+}
+
+a:hover {
+  color: #4d2600;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 50px;
+  }
+  .main__lisse--figure {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+  .main__operatie--figure {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  .main__tweejaar--video {
+    width: 500px;
+    height: 281px;
+  }
+}
+@media (min-width: 800px) {
+  .main {
+    padding: 25px;
+  }
+  .main__puppy {
+    display: grid;
+    grid-template-columns: 1fr 230px;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "A A" "B C";
+  }
+  .main__puppy--header {
+    grid-area: A;
+  }
+  .main__puppy--text {
+    grid-area: B;
+    margin-right: 50px;
+  }
+  .main__puppy--figure {
+    grid-area: C;
+  }
+  .main__proef {
+    display: grid;
+    grid-template-columns: 185px 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "D D" "F E";
+  }
+  .main__proef--header {
+    grid-area: D;
+  }
+  .main__proef--text {
+    grid-area: E;
+    margin-left: 50px;
+  }
+  .main__proef--figure {
+    grid-area: F;
+  }
+  .main__blaas {
+    display: grid;
+    grid-template-columns: 1fr 275px;
+    grid-template-rows: 1fr auto auto;
+    grid-template-areas: "G G" "H H" "I J";
+  }
+  .main__blaas--header {
+    grid-area: G;
+  }
+  .main__blaas--ontsteking {
+    grid-area: H;
+  }
+  .main__blaas--tumor {
+    grid-area: I;
+    margin-right: 50px;
+  }
+  .main__blaas--figure {
+    grid-area: J;
+  }
+  .main__vaccin {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    grid-template-rows: 1fr auto auto;
+    grid-template-areas: "K K" "L L" "N M";
+  }
+  .main__vaccin--header {
+    grid-area: K;
+  }
+  .main__vaccin--onderzoek {
+    grid-area: L;
+  }
+  .main__vaccin--injectie {
+    grid-area: M;
+    margin-left: 50px;
+  }
+  .main__vaccin--figure {
+    grid-area: N;
+  }
+}/*# sourceMappingURL=styles.css.map */
